@@ -1,3 +1,6 @@
+
+
+0. If you dont already have poetry, run pip install poetry 
 1. Clone the repository.
 2. Run : cd pubmed-fetcher
 3. Run : poetry install --no-root
