@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fetcher-final"
+version = "0.1.0"
+description = "A script to fetch data from PubMed"
+authors = ["November-6 <abhinavprajapati351@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+requests = ">=2.32.3,<3.0.0"
+
+[tool.poetry.scripts]
+pubmed-cli = "pubmed_cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
