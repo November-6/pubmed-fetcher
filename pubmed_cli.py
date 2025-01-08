@@ -1,12 +1,13 @@
-
-
 # Command-line interface: cli.py
 import argparse
 import sys
 from pubmed_fetcher import fetch_paper_ids, fetch_xml_data, extract_pubmed_data_to_csv
 
 def main():
-    parser = argparse.ArgumentParser(description="Fetch research papers from PubMed.")
+    parser = argparse.ArgumentParser(
+        description="Fetch research papers from PubMed.",
+        epilog="Example usage: python pubmed_cli.py 'cancer research' -f results.csv -d"
+    )
     parser.add_argument("query", type=str, help="Query to search PubMed.")
     parser.add_argument(
         "-f", "--file", type=str, default=None,
