@@ -1,4 +1,4 @@
-1. Clone the repo.
+1. Clone the repository.
 2. run : cd pubmed-fetcher
 3. run : poetry install --no-root
 4. To use, use command : poetry run get-papers-list "YOUR QUERY" -f YOUR-FILE-NAME.csv -d
