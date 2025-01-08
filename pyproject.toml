@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fetcher-final"
+name = "pubmed-fetcher"
 version = "0.1.0"
 description = "A script to fetch data from PubMed"
 authors = ["November-6 <abhinavprajapati351@gmail.com>"]
@@ -12,6 +12,7 @@ requests = ">=2.32.3,<3.0.0"
 
 [tool.poetry.scripts]
 pubmed-cli = "pubmed_cli:main"
+get-papers-list = "pubmed_cli:main"  # Add this line
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

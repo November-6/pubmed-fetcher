@@ -1,9 +1,10 @@
-# Command-line interface: cli.py
+
 import argparse
 import sys
 from pubmed_fetcher import fetch_paper_ids, fetch_xml_data, extract_pubmed_data_to_csv
 
 def main():
+    print("Running...")
     parser = argparse.ArgumentParser(
         description="Fetch research papers from PubMed.",
         epilog="Example usage: python pubmed_cli.py 'cancer research' -f results.csv -d"
@@ -30,6 +31,8 @@ def main():
         results = extract_pubmed_data_to_csv(xml_data, args.file)
 
         if args.file:
+            
+            print(f"Saving to {args.file}")
             print(f"Results saved to {args.file}")
         else:
             for row in results:
